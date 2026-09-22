@@ -8,30 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Radio+Canada+Big:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
     <style>
+        :root {
+            --color-primary: #CC003A;
+            --color-primary-dark: #99002B;
+            --color-primary-darker: #7A0022;
+            --color-ink: #000000;
+            --color-paper: #F8F8F8;
+        }
+
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #7A0C2E;
-            color: #333333;
+            font-family: 'Radio Canada Big', sans-serif;
+            background-color: var(--color-primary);
+            color: var(--color-ink);
             overflow-x: hidden;
             min-height: 100vh;
         }
 
         .serif-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Source Serif Pro', serif;
         }
 
         .script-font {
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Ms Madi', cursive;
         }
 
         .batik-bg {
-            background-color: #7A0C2E;
-            /* Detailed hand-drawn style Betawi batik line-art pattern: flower, swirl vine, bird, meru tower, fish scales */
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320"><g fill="none" stroke="%235a0a24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"><g transform="translate(48,46)"><circle r="7" fill="%23d4a017" fill-opacity="0.35" stroke="none"/><circle cx="0" cy="-17" r="9"/><circle cx="14.7" cy="-8.5" r="9"/><circle cx="14.7" cy="8.5" r="9"/><circle cx="0" cy="17" r="9"/><circle cx="-14.7" cy="8.5" r="9"/><circle cx="-14.7" cy="-8.5" r="9"/></g><path d="M150,20 C160,4 182,4 190,20 C198,36 182,48 168,42 C158,38 156,28 150,20 Z"/><path d="M190,20 C206,14 218,24 214,40 C210,54 194,52 189,40"/><circle cx="192" cy="20" r="2.5" fill="%235a0a24" stroke="none"/><g transform="translate(258,58)"><path d="M-26,4 C-12,-18 14,-18 26,4"/><path d="M-20,12 C-8,-2 8,-2 20,12"/><circle cx="0" cy="-6" r="3.5"/><path d="M0,-9 L4,-16"/></g><g transform="translate(30,150)"><path d="M0,40 C4,20 2,0 14,-14"/><ellipse cx="10" cy="6" rx="10" ry="5" transform="rotate(-30 10 6)"/><ellipse cx="4" cy="24" rx="10" ry="5" transform="rotate(20 4 24)"/><ellipse cx="16" cy="-10" rx="9" ry="4.5" transform="rotate(-50 16 -10)"/></g><g transform="translate(150,168)"><rect x="-16" y="26" width="32" height="14"/><polygon points="-22,26 22,26 0,10"/><polygon points="-16,10 16,10 0,-4"/><polygon points="-10,-4 10,-4 0,-18"/><line x1="0" y1="-18" x2="0" y2="-26"/></g><g transform="translate(250,190) scale(1.1)"><path d="M0,0 Q9,-9 18,0 Q9,9 0,0 Z"/><path d="M16,0 Q25,-9 34,0 Q25,9 16,0 Z"/><path d="M32,0 Q41,-9 50,0 Q41,9 32,0 Z"/></g><g transform="translate(60,250)"><circle r="6" fill="%23d4a017" fill-opacity="0.3" stroke="none"/><circle cx="0" cy="-14" r="7.5"/><circle cx="12" cy="-7" r="7.5"/><circle cx="12" cy="7" r="7.5"/><circle cx="0" cy="14" r="7.5"/><circle cx="-12" cy="7" r="7.5"/><circle cx="-12" cy="-7" r="7.5"/></g><path d="M180,260 C190,244 212,244 220,260 C228,276 212,288 198,282 C188,278 186,268 180,260 Z"/><path d="M220,260 C236,254 248,264 244,280 C240,294 224,292 219,280"/><circle cx="222" cy="260" r="2.5" fill="%235a0a24" stroke="none"/><g transform="translate(272,270)"><path d="M0,0 C6,-14 -4,-24 4,-38"/><ellipse cx="2" cy="-8" rx="8" ry="4" transform="rotate(-40 2 -8)"/><ellipse cx="-2" cy="8" rx="8" ry="4" transform="rotate(30 -2 8)"/></g></g></svg>');
-            background-size: 320px 320px;
+            background-color: var(--color-primary);
+            background-image: url('assets/img/pattern-najnco.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
             position: relative;
         }
 
@@ -49,7 +59,7 @@
         }
 
         .content-card {
-            background-color: #ffffff;
+            background-color: var(--color-paper);
             border-radius: 1.5rem;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
         }
@@ -74,11 +84,11 @@
         .section-divider-btn {
             position: relative;
             z-index: 2;
-            background-color: #7A0C2E;
-            color: #ffffff;
+            background-color: var(--color-ink);
+            color: var(--color-paper);
             padding: 0.5rem 1.5rem;
             font-size: 0.9rem;
-            font-family: monospace;
+            font-family: 'Radio Canada Big', monospace;
             font-weight: 600;
             border-radius: 9999px;
             border: 1.5px solid rgba(255, 255, 255, 0.45);
@@ -91,11 +101,11 @@
         }
 
         .section-divider-btn:hover {
-            background-color: #931139;
+            background-color: var(--color-primary-darker);
             border-color: rgba(255, 255, 255, 0.9);
             transform: translateY(-2px) scale(1.04);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.3);
-            color: #ffffff;
+            color: var(--color-paper);
         }
 
         .section-divider-btn:active {
@@ -103,9 +113,9 @@
         }
 
         .btn-pill {
-            background-color: #ffffff;
-            color: #7A0C2E;
-            border: 1px solid #f0f0f0;
+            background-color: var(--color-paper);
+            color: var(--color-primary);
+            border: 1px solid #eeeeee;
             border-radius: 9999px;
             padding: 0.75rem 1.75rem;
             font-weight: 600;
@@ -122,13 +132,13 @@
         .btn-pill:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 18px rgba(0,0,0,0.22);
-            background-color: #fff9fa;
-            color: #580820;
+            background-color: #ffffff;
+            color: var(--color-primary-darker);
         }
 
         .btn-secondary {
             background-color: rgba(255, 255, 255, 0.15);
-            color: #ffffff;
+            color: var(--color-paper);
             backdrop-filter: blur(6px);
             border: 1px solid rgba(255, 255, 255, 0.35);
             border-radius: 9999px;
@@ -145,7 +155,7 @@
 
         .btn-secondary:hover {
             background-color: rgba(255, 255, 255, 0.3);
-            color: #ffffff;
+            color: var(--color-paper);
             transform: translateY(-1px);
         }
 
@@ -159,8 +169,8 @@
         }
 
         .custom-table th {
-            background-color: #7A0C2E;
-            color: #ffffff;
+            background-color: var(--color-ink);
+            color: var(--color-paper);
             padding: 0.875rem 1rem;
             text-align: left;
             font-weight: 600;
@@ -172,6 +182,7 @@
             vertical-align: top;
             font-size: 0.9rem;
             line-height: 1.5;
+            color: var(--color-ink);
         }
 
         .custom-table tr:last-child td {
@@ -179,7 +190,7 @@
         }
 
         .custom-table tr:nth-child(even) {
-            background-color: #fafafa;
+            background-color: #efefef;
         }
 
         .page-progress-dot {
@@ -192,12 +203,12 @@
         }
 
         .page-progress-dot.active {
-            background-color: #ffffff;
+            background-color: var(--color-paper);
             width: 20px;
         }
     </style>
 </head>
-<body class="batik-bg min-h-screen text-gray-800 antialiased pb-12">
+<body class="batik-bg min-h-screen antialiased pb-12">
 
     <!-- Reusable Header Template -->
     <template id="header-branding">
@@ -281,13 +292,13 @@
                 </div>
 
                 <div class="text-center mb-2">
-                    <h2 class="serif-font text-2xl sm:text-3xl font-bold text-[#7A0C2E] mb-6">Product Identity</h2>
-                    
+                    <h2 class="serif-font text-2xl sm:text-3xl font-bold text-[#CC003A] mb-6">Product Identity</h2>
+
                     <div class="space-y-3 text-left max-w-lg mx-auto text-sm sm:text-base">
-                        <p><strong class="font-bold text-gray-900">Product Name:</strong> Betawi Ondel-ondel Merah Delima Ruffle Vest</p>
-                        <p><strong class="font-bold text-gray-900">Collection:</strong> Betawi Ondel-ondel</p>
-                        <p><strong class="font-bold text-gray-900">Product Code:</strong> BO-V01-MD-26</p>
-                        <p><strong class="font-bold text-gray-900">Colorway:</strong> Merah Delima</p>
+                        <p><strong class="font-bold text-black">Product Name:</strong> Betawi Ondel-ondel Merah Delima Ruffle Vest</p>
+                        <p><strong class="font-bold text-black">Collection:</strong> Betawi Ondel-ondel</p>
+                        <p><strong class="font-bold text-black">Product Code:</strong> BO-V01-MD-26</p>
+                        <p><strong class="font-bold text-black">Colorway:</strong> Merah Delima</p>
                     </div>
                 </div>
             </div>
@@ -322,7 +333,7 @@
                     <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1000&q=80" alt="Material Fabrics" class="w-full h-full object-cover">
                 </div>
 
-                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#7A0C2E] mb-6">Material Origin</h2>
+                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#CC003A] mb-6">Material Origin</h2>
 
                 <div class="overflow-x-auto">
                     <table class="custom-table">
@@ -392,55 +403,55 @@
             <div class="header-container"></div>
 
             <div class="content-card p-6 sm:p-8">
-                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#7A0C2E] mb-8">Production Process</h2>
+                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#CC003A] mb-8">Production Process</h2>
 
                 <div class="space-y-8 max-w-xl mx-auto">
                     <div>
-                        <h3 class="serif-font text-lg font-bold text-gray-900 mb-3">1. Design Development</h3>
+                        <h3 class="serif-font text-lg font-bold text-black mb-3">1. Design Development</h3>
                         <div class="rounded-xl overflow-hidden mb-3 border border-gray-100 shadow-sm">
                             <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80" alt="Design Development" class="w-full h-48 object-cover">
                         </div>
-                        <p class="text-sm text-gray-600 leading-relaxed">Original contemporary illustration and product design developed by Naj & Co.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Original contemporary illustration and product design developed by Naj & Co.</p>
                     </div>
 
                     <div>
-                        <h3 class="serif-font text-lg font-bold text-gray-900 mb-3">2. Material Selection</h3>
+                        <h3 class="serif-font text-lg font-bold text-black mb-3">2. Material Selection</h3>
                         <div class="rounded-xl overflow-hidden mb-3 border border-gray-100 shadow-sm">
                             <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=800&q=80" alt="Material Selection" class="w-full h-48 object-cover">
                         </div>
-                        <p class="text-sm text-gray-600 leading-relaxed">Organic textiles, Betawi batik, and post-consumer denim are carefully selected and quality checked.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Organic textiles, Betawi batik, and post-consumer denim are carefully selected and quality checked.</p>
                     </div>
 
                     <div>
-                        <h3 class="serif-font text-lg font-bold text-gray-900 mb-3">3. Fabric Printing</h3>
+                        <h3 class="serif-font text-lg font-bold text-black mb-3">3. Fabric Printing</h3>
                         <div class="rounded-xl overflow-hidden mb-3 border border-gray-100 shadow-sm">
                             <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80" alt="Fabric Printing" class="w-full h-48 object-cover">
                         </div>
-                        <p class="text-sm text-gray-600 leading-relaxed">Illustrations are printed on Toyobo fabric using OEKO TEX® Standard 100 certified inks.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Illustrations are printed on Toyobo fabric using OEKO TEX® Standard 100 certified inks.</p>
                     </div>
 
                     <div>
-                        <h3 class="serif-font text-lg font-bold text-gray-900 mb-3">4. Cutting & Sewing</h3>
+                        <h3 class="serif-font text-lg font-bold text-black mb-3">4. Cutting & Sewing</h3>
                         <div class="rounded-xl overflow-hidden mb-3 border border-gray-100 shadow-sm">
                             <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Cutting & Sewing" class="w-full h-48 object-cover">
                         </div>
-                        <p class="text-sm text-gray-600 leading-relaxed">Materials are precisely cut and assembled by local tailoring partners.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Materials are precisely cut and assembled by local tailoring partners.</p>
                     </div>
 
                     <div>
-                        <h3 class="serif-font text-lg font-bold text-gray-900 mb-3">5. Quality Control</h3>
+                        <h3 class="serif-font text-lg font-bold text-black mb-3">5. Quality Control</h3>
                         <div class="rounded-xl overflow-hidden mb-3 border border-gray-100 shadow-sm">
                             <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80" alt="Quality Control" class="w-full h-48 object-cover">
                         </div>
-                        <p class="text-sm text-gray-600 leading-relaxed">Each product is inspected to ensure consistent quality and craftsmanship.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Each product is inspected to ensure consistent quality and craftsmanship.</p>
                     </div>
 
                     <div>
-                        <h3 class="serif-font text-lg font-bold text-gray-900 mb-3">6. Packaging</h3>
+                        <h3 class="serif-font text-lg font-bold text-black mb-3">6. Packaging</h3>
                         <div class="rounded-xl overflow-hidden mb-3 border border-gray-100 shadow-sm">
                             <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Packaging" class="w-full h-48 object-cover">
                         </div>
-                        <p class="text-sm text-gray-600 leading-relaxed">Finished with a unique traceability gift charm and recycled seed paper.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Finished with a unique traceability gift charm and recycled seed paper.</p>
                     </div>
                 </div>
             </div>
@@ -477,31 +488,31 @@
                     <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1000&q=80" alt="Batik Craftsmanship" class="w-full h-full object-cover">
                 </div>
 
-                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#7A0C2E] mb-8">Artisan & Maker</h2>
+                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#CC003A] mb-8">Artisan & Maker</h2>
 
                 <div class="space-y-10 max-w-xl mx-auto">
                     <div class="text-center">
-                        <h3 class="serif-font text-xl font-bold text-gray-900">Ibu Siti Laela</h3>
-                        <p class="italic text-sm text-gray-600 mb-4">The Batik Betawi Maker</p>
-                        
+                        <h3 class="serif-font text-xl font-bold text-black">Ibu Siti Laela</h3>
+                        <p class="italic text-sm text-gray-700 mb-4">The Batik Betawi Maker</p>
+
                         <div class="rounded-xl overflow-hidden mb-4 border border-gray-100 shadow-sm max-w-md mx-auto">
                             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Ibu Siti Laela" class="w-full h-64 object-cover">
                         </div>
 
-                        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                        <p class="text-sm text-gray-700 leading-relaxed text-justify">
                             Founder of Batik Betawi Terogong in South Jakarta. Motivated by the decline of Kampung Terogong's batik tradition, she revived the craft by preserving authentic Betawi motifs and empowering local women through batik making.
                         </p>
                     </div>
 
                     <div class="text-center pt-6 border-t border-gray-100">
-                        <h3 class="serif-font text-xl font-bold text-gray-900">Mas Arianto</h3>
-                        <p class="italic text-sm text-gray-600 mb-4">The Tailor</p>
-                        
+                        <h3 class="serif-font text-xl font-bold text-black">Mas Arianto</h3>
+                        <p class="italic text-sm text-gray-700 mb-4">The Tailor</p>
+
                         <div class="rounded-xl overflow-hidden mb-4 border border-gray-100 shadow-sm max-w-md mx-auto">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Mas Arianto" class="w-full h-64 object-cover">
                         </div>
 
-                        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                        <p class="text-sm text-gray-700 leading-relaxed text-justify">
                             Master craftsman specializing in structural garment tailoring and delicate upcycled denim construction, ensuring every vest retains its premium quality and unique silhouette.
                         </p>
                     </div>
@@ -541,22 +552,22 @@
                 </div>
 
                 <div class="text-center mb-6">
-                    <h2 class="serif-font text-2xl sm:text-3xl font-bold text-[#7A0C2E]">Cultural Story</h2>
-                    <p class="serif-font text-gray-700 italic font-medium mt-1">Batik Ondel-ondel Burung Hong</p>
+                    <h2 class="serif-font text-2xl sm:text-3xl font-bold text-[#CC003A]">Cultural Story</h2>
+                    <p class="serif-font text-black italic font-medium mt-1">Batik Ondel-ondel Burung Hong</p>
                 </div>
 
-                <div class="space-y-4 text-sm text-gray-600 leading-relaxed text-justify max-w-xl mx-auto">
+                <div class="space-y-4 text-sm text-gray-700 leading-relaxed text-justify max-w-xl mx-auto">
                     <p>
                         The cultural icons in this batik represent spiritual symbols and centers of cultural acculturation, preserving the values and identity of the Betawi people through every motif.
                     </p>
 
                     <div>
-                        <strong class="text-gray-900 block font-semibold">Ondel-Ondel</strong>
+                        <strong class="text-black block font-semibold">Ondel-Ondel</strong>
                         <p>Once believed to represent ancestral guardians, Ondel-Ondel stands as the most recognizable symbol of Betawi identity, representing resilience, protection, and community spirit.</p>
                     </div>
 
                     <div>
-                        <strong class="text-gray-900 block font-semibold">Burung Hong</strong>
+                        <strong class="text-black block font-semibold">Burung Hong</strong>
                         <p>Inspired by the Chinese phoenix, Burung Hong reflects centuries of cultural exchange that shaped Betawi heritage, symbolizing prosperity, harmony, and elegance.</p>
                     </div>
 
@@ -598,9 +609,9 @@
             <div class="header-container"></div>
 
             <div class="content-card p-6 sm:p-8">
-                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#7A0C2E] mb-6">Sustainability Impact</h2>
+                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#CC003A] mb-6">Sustainability Impact</h2>
 
-                <div class="space-y-4 text-sm text-gray-600 leading-relaxed text-justify max-w-xl mx-auto">
+                <div class="space-y-4 text-sm text-gray-700 leading-relaxed text-justify max-w-xl mx-auto">
                     <p>
                         This collection is designed to create impact beyond the product itself. Organic linen replaces synthetic fabrics, while post-consumer denim is carefully upcycled into new design elements.
                     </p>
@@ -638,21 +649,21 @@
             <div class="header-container"></div>
 
             <div class="content-card p-6 sm:p-8">
-                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#7A0C2E] mb-8">Care & Longevity</h2>
+                <h2 class="serif-font text-2xl sm:text-3xl font-bold text-center text-[#CC003A] mb-8">Care & Longevity</h2>
 
-                <div class="space-y-5 text-sm text-gray-600 max-w-xl mx-auto">
+                <div class="space-y-5 text-sm text-gray-700 max-w-xl mx-auto">
                     <div>
-                        <strong class="text-gray-900 block font-semibold mb-1">Gentle Washing</strong>
+                        <strong class="text-black block font-semibold mb-1">Gentle Washing</strong>
                         <p>Hand wash or machine wash on a delicate cycle using cold water and mild detergent.</p>
                     </div>
 
                     <div>
-                        <strong class="text-gray-900 block font-semibold mb-1">Air Dry Naturally</strong>
+                        <strong class="text-black block font-semibold mb-1">Air Dry Naturally</strong>
                         <p>Dry in the shade and avoid direct sunlight to maintain fabric color and strength.</p>
                     </div>
 
                     <div>
-                        <strong class="text-gray-900 block font-semibold mb-1">Iron with Care</strong>
+                        <strong class="text-black block font-semibold mb-1">Iron with Care</strong>
                         <p>Iron at a low to medium temperature with a pressing cloth over batik panels.</p>
                     </div>
                 </div>
@@ -686,22 +697,22 @@
             <div class="header-container"></div>
 
             <div class="content-card p-8 sm:p-12 text-center max-w-xl mx-auto">
-                <h2 class="script-font text-5xl sm:text-6xl text-[#7A0C2E] mb-4">Thank you!</h2>
-                <p class="text-sm font-semibold text-gray-700 tracking-wide uppercase mb-6">for choosing a story worth wearing.</p>
+                <h2 class="script-font text-5xl sm:text-6xl text-[#CC003A] mb-4">Thank you!</h2>
+                <p class="text-sm font-semibold text-black tracking-wide uppercase mb-6">for choosing a story worth wearing.</p>
 
-                <div class="space-y-4 text-sm sm:text-base text-gray-600 leading-relaxed mb-8">
+                <div class="space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed mb-8">
                     <p>
                         Every thread and motif in this piece reflects the hands of local artisans and Betawi heritage.
                     </p>
-                    <p class="font-bold text-gray-900 pt-2">
+                    <p class="font-bold text-black pt-2">
                         Wear it with pride. Keep its story alive.
                     </p>
                 </div>
 
                 <div class="flex justify-center items-center pt-2">
                     <div class="text-center">
-                        <span class="script-font text-3xl text-[#7A0C2E] block">Naj & Co.</span>
-                        <span class="text-[10px] tracking-widest text-gray-400 uppercase">WEAR THE STORY</span>
+                        <span class="script-font text-3xl text-[#CC003A] block">Naj & Co.</span>
+                        <span class="text-[10px] tracking-widest text-gray-500 uppercase">WEAR THE STORY</span>
                     </div>
                 </div>
             </div>
@@ -731,7 +742,7 @@
 
         function navigateTo(targetPageId) {
             const views = document.querySelectorAll('.page-view');
-            
+
             views.forEach(view => {
                 if (view.id === targetPageId) {
                     view.classList.add('active');
@@ -768,7 +779,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const template = document.getElementById('header-branding').content;
             const headerContainers = document.querySelectorAll('.header-container');
-            
+
             headerContainers.forEach(container => {
                 container.appendChild(template.cloneNode(true));
             });
